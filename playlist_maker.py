@@ -10,15 +10,15 @@ def Recommendation(h, e, l ):
     coords = np.array([[h, e]])
     distances = distance.cdist(latent_space_quantiled, coords, 'euclidean')
     arg_distances = np.argsort(distances, axis=0)
-    top20 = np.random.choice(arg_distances[:l*10].reshape(-1), l)
+    top_songs = np.random.choice(arg_distances[:l*10].reshape(-1), l)
 
-    return top20
+    return top_songs
 
 
 def openNewWindow(h, e, l):
-    global top20
+    global top_songs
 
-    top20 = Recommendation(h,e,l)
+    top_songs = Recommendation(h,e,l)
 
     # Toplevel object which will
     # be treated as a new window
@@ -35,8 +35,8 @@ def openNewWindow(h, e, l):
     tk.Label(newWindow,
           text="Happiness: {}%, Energy: {}%\n".format(int(h*100), int(e*100)), font = "fixedsys 12 bold").pack()
 
-    tk.Label(newWindow, text=tabulate(data.iloc[top20,:][["name", "artists"]], headers=["name", "artists"], tablefmt='psql', showindex = False)).pack()
-          # text=data.iloc[top20,:][["name", "artists"]].to_string(index = False)).pack()
+    tk.Label(newWindow, text=tabulate(data.iloc[top_songs,:][["name", "artists"]], headers=["name", "artists"], tablefmt='psql', showindex = False)).pack()
+
 
 # READ LATENT SPACE FILE
 latent_space_quantiled = np.load("./data/latent_space_quantiled.npy")
