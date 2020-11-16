@@ -43,19 +43,19 @@ This is just a fun project developed to apply some deep learning architectures.
 
 ## Usage
 
-### Step 1
+#### Step 1
 
 Adjust the sliders values according to your current mood and how long you want the playlist to be.
 
-### Step 2
+#### Step 2
 
 Press the button and generate a new playlist. 
 There is some randomness involved on purpose, so you can get different results even if you enter the same values again. 
 You won't get the same songs every time!
 
-### Step 3
+#### Step 3
 
-Enjoy the playlist and I hope you discover some new music!
+Enjoy the playlist! I hope you discover some new music!
 
 
 ## Images
