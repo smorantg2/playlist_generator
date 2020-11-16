@@ -1,6 +1,20 @@
 # Spotify Database Playlist Generator
 Retro graphical interface to generate playlist based on Spofity Database. 
-Video [here](https://www.linkedin.com/in/sergio-morant-galvez/)
+Video [here](https://www.linkedin.com/in/sergio-morant-galvez/).
+
+## VARIATIONAL AUTOENCODER FOR DIMENSIONALITY REDUCTION
+
+The original Spotify database contains many features for each song (speechiness, danceability, energy, acousticness, etc), so I used three methods to reduce all of them to a bidimensional space: PCA, Autoencoder and Variational Autoencoder. 
+
+As you can see below, the results vary with each method. I wanted to try and code a VAE for myself and see the differences with the Autoencoder in the resulting latent space.
+
+The main use of Variational Autoencoders is to generate new data that's related to the original source.
+Here it is used only to reduce dimensionality. (A little bit overkill? I know. Keep in mind that this is just a fun project.)
+You can turn an Autoencoder into a Variational Autoencoder with minor changes in the encoder and the loss function, and that is what I did here. I also uploaded this part of the code.
+
+If you want to get a deeper understanding of these generative models I strongly recommend the book "Generative Deep Learning" from David Foster.
+
+![PCA](./images/PCA.png) ![Autoencoder](./images/Autoencoder.png) ![Variational Autoencoder](./images/VAE.png)
 
 
 ## Python Package Requirements
@@ -14,7 +28,7 @@ Video [here](https://www.linkedin.com/in/sergio-morant-galvez/)
 
 ## Description
 
-Tkinter-based GUI to generate playlists based on your current mood from +160.000 Spotify songs.
+Tkinter-based GUI to generate playlists based on your current mood ("Happiness" and "Energy") from +160.000 Spotify songs.
 
 Please note that the songs are represented in a latent space created by using a VAE (Variational Autoencoder) and the axis representation is open to interpretation. 
 
