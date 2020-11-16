@@ -6,22 +6,19 @@ Video [here](https://www.linkedin.com/in/sergio-morant-galvez/).
 
 The original Spotify database contains many features for each song (speechiness, danceability, energy, acousticness, etc), so I used three methods to reduce all of them to a bidimensional space: PCA, Autoencoder and Variational Autoencoder. 
 
-As you can see below, the results vary with each method. I wanted to try and code a VAE for myself and see the differences with the Autoencoder in the resulting latent space.
+As you can see below, the results vary with each method. I wanted to try and code a VAE for myself and see the differences with the Autoencoder in the resulting latent space. Also, I wanted a more-or-less-continuous and without-blank-spaces latent space so I could get songs from any part of it
 
 The main use of Variational Autoencoders is to generate new data that's related to the original source.
-Here it is used only to reduce dimensionality. (A little bit overkill? I know. Keep in mind that this is just a fun project.)
+
+Here it is used only to reduce dimensionality. (A little bit overkill, I know. Keep in mind that this is just a fun project.)
+
 You can turn an Autoencoder into a Variational Autoencoder with minor changes in the encoder and the loss function, and that is what I did here. I also uploaded this part of the code.
 
 If you want to get a deeper understanding of these generative models I strongly recommend the book "Generative Deep Learning" from David Foster.
 
-
 <span>
   <img src='./images/PCA.jpg' width="320" height="180"> 
-</span>
-<span>
   <img src='./images/Autoencoder.jpg' width="320" height="180"> 
-</span>
-<span>
   <img src='./images/VAE.jpg' width="320" height="180"> 
 </span>
 
