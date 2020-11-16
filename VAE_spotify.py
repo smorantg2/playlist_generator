@@ -25,8 +25,9 @@ def vae_loss(y_true, y_pred):
 # ENCODER
 size = 128
 activation = "relu"
+INPUT_DIM = 9
 
-encoder_input = Input(shape=(7,))
+encoder_input = Input(shape=(INPUT_DIM,))
 x = encoder_input
 x = BatchNormalization()(x)
 x = Dense(size)(x)
@@ -63,7 +64,7 @@ x = LeakyReLU()(x)
 x = Dense(size)(x)
 x = LeakyReLU()(x)
 x = Dense(size)(x)
-decoder_output = Dense(7, activation = "sigmoid")(x)
+decoder_output = Dense(INPUT_DIM, activation = "sigmoid")(x)
 
 
 decoder = Model(inputs=input_decoder, outputs=decoder_output)
