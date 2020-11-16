@@ -17,7 +17,11 @@ If you want to get a deeper understanding of these generative models I strongly 
 
 <span>
   <img src='./images/PCA.png' width="160" height="90"> 
+</span>
+<span>
   <img src='./images/Autoencoder.png' width="160" height="90"> 
+</span>
+<span>
   <img src='./images/VAE.png' width="160" height="90"> 
 </span>
 
