@@ -42,7 +42,7 @@ Enjoy the playlist and I hope you discover some new music!
 
 ![Main window](./images/Main.png)
 
-![Playlist window](.images/Playlist.png)
+![Playlist window](./images/Playlist.png)
 
 
 
