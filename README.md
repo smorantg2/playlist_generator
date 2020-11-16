@@ -40,8 +40,8 @@ Enjoy the playlist and I hope you discover some new music!
 
 ## Images
 
-![Main window](Main.png)
-![Playlist window](Playlist.png)
+![Main window](./images/Main.png)
+![Playlist window](.images/Playlist.png)
 
 
 
