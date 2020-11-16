@@ -1,5 +1,5 @@
 # Spotify Database Playlist Generator
-Retro-style GUI to generate playlist from Spofity Database based on your current mood. 
+Retro-style GUI for generating playlist from Spofity Database based on your current mood. 
 Video [here](https://www.linkedin.com/in/sergio-morant-galvez/).
 
 ## VARIATIONAL AUTOENCODER FOR DIMENSIONALITY REDUCTION
