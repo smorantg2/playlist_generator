@@ -14,10 +14,12 @@ You can turn an Autoencoder into a Variational Autoencoder with minor changes in
 
 If you want to get a deeper understanding of these generative models I strongly recommend the book "Generative Deep Learning" from David Foster.
 
-![PCA](./images/PCA.png width="160" height="90")  
-![Autoencoder](./images/Autoencoder.png width="160" height="90") 
-![Variational Autoencoder](./images/VAE.png width="160" height="90")
 
+<span>
+  <img src='./images/PCA.png' width="160" height="90"> 
+  <img src='./images/Autoencoder.png' width="160" height="90"> 
+  <img src='./images/VAE.png' width="160" height="90"> 
+</span>
 
 
 ## Python Package Requirements
