@@ -15,7 +15,7 @@ Here it is used only to reduce dimensionality. (A little bit overkill, I know. K
 
 You can turn an Autoencoder into a Variational Autoencoder with minor changes in the encoder and the loss function, and that is what I did here. I also uploaded this part of the code.
 
-If you want to get a deeper understanding of these generative models I strongly recommend the book "Generative Deep Learning" from David Foster.
+If you want to get a deeper understanding of these generative models I strongly recommend the book "Generative Deep Learning" by David Foster.
 
 <span>
   <img src='./images/PCA.jpg' width="320" height="180"> 
